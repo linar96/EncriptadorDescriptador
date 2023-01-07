@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Encript-Descript</title>
+</head>
+<body>
+    <nav class="m-1">
+        <img src="/img/encryp.png" style="width: 100px; height: 100px; border-radius: 55%;">
+        <h1 class="titulo ">Encripta  Y Desencripta texto</h1>
+    </nav>
+    <section>
+        <div class="row m-3">
+            <div class="col-7 col-sm-1">
+             <textarea class="text-area" name="text" id="encri" cols="30" rows="7"
+             placeholder="Inserte texto" ></textarea>
+             <p class="m-1 error" id="error">!!! Solo letras minusculas y sin acento ¡¡¡</p>
+
+             <div class="row m-1 ">
+                <div class="col-5 col-sm-2 m-1">
+                    <button class="btn" onclick="encriptar()">Encriptar</button>
+                </div>
+                <div class="col-5 col-sm-2 m-1">
+                    <button class="btn" onclick="desencriptar()">Desencriptar</button>
+                </div>
+             </div>
+            </div>
+        </div>
+
+        <div class="col-4 m-1 col-sm-2 card">
+            <img src="/img/icon.png" alt="img" id="imagen">
+            <section class="row m-4" id="resultado">
+                <h1>Ningun mensaje fue encontrado</h1>
+                <p>Ingrese texto a Encriptar o Desencriptar</p>
+            </section>
+            <div class="col-12">
+                <button style="margin-top:17%;" class="btn" id="copiar">Copiar</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="/js/funciones.js"></script>
+    
+</body>
+</html>
